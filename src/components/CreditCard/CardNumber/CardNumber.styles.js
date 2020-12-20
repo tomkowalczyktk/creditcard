@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Input = styled.input `
+export const Input = styled.input `
   margin-left: 0.5em;
   margin-right: 2em;
   color: #222;
@@ -9,4 +9,3 @@ const Input = styled.input `
   width: 11em;
   font-size: 1em;
 `;
-export { Input };

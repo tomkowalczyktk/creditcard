@@ -1,7 +1,7 @@
-Stworzenie komponentu do obsługi kart kredytowych, który obsłuży dwóch dostawców 
-- [x] zmiana loga karty kredytowej po wpisaniu odpowiedniego początku. 
-- [x] Dodatkowo po wpisaniu określonej ilości znaków (możemy przyjąć dla uproszczenia jedną wartość dla wszystkich numerów kart
- kredytowych), kursor automatycznie przeskoczy do następnego pola, 
-- [x] to samo w przypadku daty.
-- [x] Dodaj proszę walidację na datę - ważność karty
- definiujemy poprzez datę późniejszą niż obecna. 
+App is a React credit card component, recognizes two types of cards
+-[V]Changes credit card logo at proper input 
+-[V]Additionally  after input of required number of characters (to simplyfy equal to all cards), caret will move to the next field
+-[V]Same for date
+-[V]Date validation (ExpDate after Now)
+ 
+

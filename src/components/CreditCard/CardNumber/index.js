@@ -1,27 +1,37 @@
 import React from 'react';
+
 import { Input } from './CardNumber.styles';
+
 const CardNumber = ({ value, setValue, focusNextField, setError }) => {
-  const validate = val => {
-    if (val === '' || val.length < 16) {
-      setError('16 digit number is required');
-    } else {
-      setError(null);
-    }
-  };
+
   const MAX_LENGTH = 16;
+
   const onChange = e => {
+
     const re = /^[0-9\b]+$/;
-    const val = e.target.value;
-    if (val === '' || re.test(val)) {
-      setValue(val);
-      if (val.length === MAX_LENGTH) {
+
+    if (e.target.value === '' || re.test(e.target.value)) {
+      setValue(e.target.value);
+      if (e.target.value.length === MAX_LENGTH) {
         focusNextField();
       }
-
+      
+      if (e.target.value === ''||e.target.value.length < MAX_LENGTH) {
+        setError('16 digit number is required');
+      } else {
+        setError(null);
+      }
     }
   };
+
   return (
-    <Input value={value} onChange={onChange} onBlur={e => validate(e.target.value)} placeholder="0000 0000 0000 0000" maxLength="32"/>
+    <Input
+      value={ value }
+      onChange={ onChange }
+      onBlur={ onChange }
+      placeholder="0000 0000 0000 0000"
+      maxLength="32"
+    />
   )
 }
 export default CardNumber;

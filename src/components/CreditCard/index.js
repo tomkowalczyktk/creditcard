@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+
 import CardType from './CardType';
 import CardNumber from './CardNumber';
 import CardExpireDate from './CardExpireDate';
@@ -6,7 +7,9 @@ import CardCVC from './CardCVC';
 import ErrorMessage from './ErrorMessage';
 import { Wrapper, Border, Row } from './CreditCard.styles';
 import { createFocusCallback } from './tools';
-const CreditCard = (props) => {
+
+const CreditCard = () => {
+
   const [number, setNumber] = useState('');
   const [expireDate, setExpireDate] = useState('');
   const [cvc, setCVC] = useState('');
@@ -47,11 +50,5 @@ const CreditCard = (props) => {
     </Wrapper>
   );
 };
-
-// Specifies types for props:
-CreditCard.propTypes = {
-
-};
-
 
 export default CreditCard;

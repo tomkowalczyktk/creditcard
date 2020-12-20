@@ -1,12 +1,14 @@
 import React from 'react';
-// import logo from './logo.svg';
+
+import CreditCard from './components/CreditCard';
+
 import { Wrapper, Inner } from './App.styles';
 
 function App({ children }) {
   return (
     <Wrapper>
       <Inner>
-        {children}
+        <CreditCard/>
       </Inner>
     </Wrapper>
   );

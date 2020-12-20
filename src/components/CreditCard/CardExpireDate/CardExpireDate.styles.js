@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Input = styled.input `
+export const Input = styled.input `
   margin: 0 0.1em;
   color: #222;
   background: white;
@@ -9,12 +9,11 @@ const Input = styled.input `
   font-size: 1em;
 `;
 
-const Separator = styled.span `
+export const Separator = styled.span `
   color: #888;
 `;
 
-const Wrapper = styled.div `
+export const Wrapper = styled.div `
   margin-right: 1em;
 `;
 
-export { Input, Separator, Wrapper };

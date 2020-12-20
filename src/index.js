@@ -7,9 +7,7 @@ import CreditCard from './components/CreditCard';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App>
-      <CreditCard/>
-    </App>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
